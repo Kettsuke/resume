@@ -2,239 +2,38 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luis Bryon | GHL Specialist & Automation Engineer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg: #0f172a;
-            --card-bg: #1e293b;
-            --text-main: #f1f5f9;
-            --text-dim: #94a3b8;
-            --accent: #38bdf8;
-            --border: #334155;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: var(--bg);
-            color: var(--text-main);
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            padding: 2rem 1rem;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        header {
-            margin-bottom: 3rem;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 2rem;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(to right, #38bdf8, #818cf8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            color: var(--accent);
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            margin: 2rem 0 1rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        h2::after {
-            content: "";
-            height: 1px;
-            background: var(--border);
-            flex-grow: 1;
-        }
-
-        p {
-            color: var(--text-dim);
-            margin-bottom: 1rem;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .card {
-            background: var(--card-bg);
-            padding: 1.5rem;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-        }
-
-        .card h3 {
-            font-size: 1rem;
-            margin-bottom: 0.8rem;
-            color: var(--accent);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .tag {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.8rem;
-            background: #0f172a;
-            padding: 4px 8px;
-            border-radius: 4px;
-            border: 1px solid var(--border);
-        }
-
-        ul {
-            list-style: none;
-            color: var(--text-dim);
-        }
-
-        ul li {
-            margin-bottom: 0.5rem;
-            position: relative;
-            padding-left: 1.5rem;
-        }
-
-        ul li::before {
-            content: "→";
-            position: absolute;
-            left: 0;
-            color: var(--accent);
-        }
-
-        .contact-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            margin-top: 1rem;
-        }
-
-        .contact-list a {
-            color: var(--text-main);
-            text-decoration: none;
-            font-weight: 600;
-            border-bottom: 1px solid var(--accent);
-            transition: all 0.2s;
-        }
-
-        .contact-list a:hover {
-            background: var(--accent);
-            color: var(--bg);
-        }
-
-        footer {
-            margin-top: 4rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--border);
-            font-size: 0.9rem;
-            font-style: italic;
-            color: var(--text-dim);
-        }
-
-        @media (max-width: 600px) {
-            h1 { font-size: 2rem; }
-        }
-    </style>
+    <title>Luis Bryon | Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
+        <nav>
+            <div class="nav-container">
+                <a href="index.html" class="active">Home</a>
+                <a href="historia.html">Historia</a>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="skills.html">Skills</a>
+                <a href="acerca.html">Sobre mí</a>
+            </div>
+        </nav>
+
         <header>
             <h1>Luis Bryon</h1>
-            <div class="subtitle">GoHighLevel Specialist & Marketing Automation Engineer</div>
-            <p>Building marketing tech systems that actually work, from Cali, Colombia (US-aligned timezone)</p>
+            <p style="font-size: 1.2rem; color: var(--accent);">Automation Engineer & GHL Specialist</p>
+            <p>Construyo sistemas de marketing que funcionan. Especialista en GoHighLevel y n8n basado en Cali, Colombia.</p>
         </header>
 
-        <section>
-            <h2>What I Do</h2>
-            <ul>
-                <li><strong>GoHighLevel:</strong> Workflows, white label, AI bots, custom integrations.</li>
-                <li><strong>Automation pipelines:</strong> n8n, Pabbly Connect, Make/Integromat.</li>
-                <li><strong>Full-stack development:</strong> Custom code for complex workflows.</li>
-                <li><strong>DevOps & Infra:</strong> Self-hosted ticketing, Elasticsearch, Docker.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Tech Stack</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Marketing Automation</h3>
-                    <div class="tags">
-                        <span class="tag">GoHighLevel</span>
-                        <span class="tag">n8n</span>
-                        <span class="tag">Make</span>
-                        <span class="tag">AI Bots</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>Development</h3>
-                    <div class="tags">
-                        <span class="tag">Next.js</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">Tailwind</span>
-                    </div>
-                </div>
+        <h2>Enfoque</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Marketing Ops</h3>
+                <p>Implementación de workflows complejos, bots de IA y CRM para agencias.</p>
             </div>
-        </section>
-
-        <section>
-            <h2>Currently</h2>
-            <p><strong>Engineering:</strong> Marketing automation for a US healthcare network.</p>
-            <p><strong>Academic:</strong> Studying Systems Engineering (5th semester).</p>
-            <p><strong>Status:</strong> Open to remote opportunities (USD-based).</p>
-        </section>
-
-        <section>
-            <h2>Background</h2>
-            <p>Mi camino no ha sido lineal: 3 años en Customer Service, 1 año en ventas y experiencia como Digital Solutions Specialist. Esta mezcla me permite entender al usuario final antes de escribir una sola línea de código.</p>
-        </section>
-
-        <section>
-            <h2>Reach Me</h2>
-            <div class="contact-list">
-                <a href="tel:+573163612669">+57 3163612669</a>
-                <a href="mailto:luisbryon@gmail.com">Email</a>
-                <a href="https://www.linkedin.com/in/luis-david-bryon-3478aa236/" target="_blank">LinkedIn</a>
+            <div class="card">
+                <h3>Custom Dev</h3>
+                <p>Código a medida cuando las herramientas No-Code llegan a su límite.</p>
             </div>
-        </section>
-
-        <footer>
-            If you're an agency or business looking for someone who can ship, not just code, let's talk.
-        </footer>
+        </div>
     </div>
-
 </body>
 </html>

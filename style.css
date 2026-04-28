@@ -1,0 +1,86 @@
+:root {
+    --bg: #0f172a;
+    --card-bg: #1e293b;
+    --text-main: #f1f5f9;
+    --text-dim: #94a3b8;
+    --accent: #38bdf8;
+    --border: #334155;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: var(--bg);
+    color: var(--text-main);
+    font-family: 'Inter', -apple-system, sans-serif;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+/* Navegación */
+nav {
+    margin-bottom: 3rem;
+}
+
+.nav-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    background: var(--card-bg);
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid var(--border);
+    flex-wrap: wrap;
+}
+
+.nav-container a {
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.nav-container a:hover, .nav-container a.active {
+    color: var(--accent);
+    background: rgba(56, 189, 248, 0.1);
+}
+
+/* Tipografía */
+h1 { font-size: 2.2rem; margin-bottom: 0.5rem; color: var(--text-main); }
+h2 { font-size: 1.5rem; margin: 2rem 0 1rem; color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 5px; }
+p { margin-bottom: 1.2rem; color: var(--text-dim); }
+
+/* Componentes */
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+.card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    background: var(--bg);
+    padding: 3px 8px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    margin-right: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+ul { list-style: none; margin-bottom: 1.5rem; }
+ul li { position: relative; padding-left: 1.5rem; margin-bottom: 0.5rem; color: var(--text-dim); }
+ul li::before { content: "→"; position: absolute; left: 0; color: var(--accent); }
+
+footer { margin-top: 4rem; text-align: center; font-size: 0.8rem; color: var(--text-dim); border-top: 1px solid var(--border); padding-top: 2rem; }
