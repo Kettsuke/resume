@@ -1,85 +1,116 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en"> <!-- Default language: English -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luis Bryon | Automation Expert</title>
+    <!-- Styles & Fonts -->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
+        <!-- Navigation Bar -->
         <nav>
             <div class="nav-container">
-                <a href="index.html" class="active">Inicio</a>
-                <a href="historia.html">Historia</a>
-                <a href="proyectos.html">Proyectos</a>
-                <a href="skills.html">Habilidades</a>
-                <a href="acerca.html">Sobre mí</a>
+                <a href="index.html" class="active" data-en="Home" data-es="Inicio">Home</a>
+                <a href="historia.html" data-en="History" data-es="Historia">History</a>
+                <a href="proyectos.html" data-en="Projects" data-es="Proyectos">Projects</a>
+                <a href="skills.html" data-en="Skills" data-es="Habilidades">Skills</a>
+                <a href="acerca.html" data-en="About" data-es="Sobre mí">About</a>
+                <!-- Language Toggle Button -->
+                <button id="lang-toggle" class="lang-btn">ESP</button>
             </div>
         </nav>
 
         <main>
+            <!-- Hero Section -->
             <section class="hero">
                 <div class="hero-content">
-                    <span class="badge">Disponible para nuevos proyectos</span>
-                    <h1>Ingeniería de Automatización & GHL</h1>
-                    <p class="hero-desc">
-                        Ayudo a agencias y empresas a escalar mediante sistemas inteligentes.
-                        Especialista en <strong>GoHighLevel</strong>, <strong>n8n</strong> y soluciones personalizadas
-                        de IA.
+                    <span class="badge" data-en="Available for new projects" data-es="Disponible para proyectos">Available for new projects</span>
+                    <h1 data-en="Automation & GHL Engineering" data-es="Ingeniería de Automatización & GHL">Automation & GHL Engineering</h1>
+                    <p class="hero-desc" data-en="I help agencies and businesses scale through intelligent systems. Specialist in <strong>GoHighLevel</strong>, <strong>n8n</strong>, and custom AI solutions." data-es="Ayudo a agencias y empresas a escalar mediante sistemas inteligentes. Especialista en <strong>GoHighLevel</strong>, <strong>n8n</strong> y soluciones personalizadas de IA.">
+                        I help agencies and businesses scale through intelligent systems. 
+                        Specialist in <strong>GoHighLevel</strong>, <strong>n8n</strong>, and custom AI solutions.
                     </p>
                     <div class="cta-group">
-                        <a href="#contacto" class="btn-primary">Hablemos de tu proyecto</a>
+                        <a href="#contact" class="btn-primary" data-en="Let's Talk" data-es="Hablemos">Let's Talk</a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <!-- Aquí irá tu foto: assets/img/perfil.jpg -->
-                    <img src="assets/img/perfil.webp" alt="Luis Bryon"
-                        onerror="this.src='https://via.placeholder.com/280x280/1e293b/38bdf8?text=Luis+Bryon'">
+                    <!-- Profile Picture -->
+                    <img src="assets/img/perfil.webp" alt="Luis Bryon" onerror="this.src='https://via.placeholder.com/280x280/1e293b/38bdf8?text=Luis+Bryon'">
                 </div>
             </section>
 
+            <!-- Impact Metrics -->
             <section class="stats-row">
                 <div class="stat-item">
                     <h4>50+</h4>
-                    <p>Workflows creados</p>
+                    <p data-en="Workflows Built" data-es="Workflows creados">Workflows Built</p>
                 </div>
                 <div class="stat-item">
                     <h4>20+</h4>
-                    <p>CRMs optimizados</p>
+                    <p data-en="CRMs Optimized" data-es="CRMs optimizados">CRMs Optimized</p>
                 </div>
                 <div class="stat-item">
                     <h4>100%</h4>
-                    <p>Enfoque en ROI</p>
+                    <p data-en="ROI Focused" data-es="Enfoque en ROI">ROI Focused</p>
                 </div>
             </section>
 
-            <h2 class="section-title">Especialidades</h2>
+            <!-- Services Section -->
+            <h2 class="section-title" data-en="Specialties" data-es="Especialidades">Specialties</h2>
             <div class="grid">
                 <div class="card">
-                    <h3>Marketing Ops</h3>
-                    <p>Configuración avanzada de GoHighLevel, snapshot architecture y automatización de lead journey.
+                    <h3 data-en="Marketing Ops" data-es="Marketing Ops">Marketing Ops</h3>
+                    <p data-en="Advanced GoHighLevel setup, snapshot architecture, and lead journey automation." data-es="Configuración avanzada de GoHighLevel, arquitectura de snapshots y automatización de leads.">
+                        Advanced GoHighLevel setup, snapshot architecture, and lead journey automation.
                     </p>
                 </div>
                 <div class="card">
-                    <h3>Integraciones Custom</h3>
-                    <p>Conexión de herramientas complejas usando n8n, webhooks y APIs personalizadas.</p>
+                    <h3 data-en="Custom Integrations" data-es="Integraciones Custom">Custom Integrations</h3>
+                    <p data-en="Connecting complex tools using n8n, webhooks, and custom APIs." data-es="Conexión de herramientas complejas usando n8n, webhooks y APIs personalizadas.">
+                        Connecting complex tools using n8n, webhooks, and custom APIs.
+                    </p>
                 </div>
                 <div class="card">
-                    <h3>IA Aplicada</h3>
-                    <p>Implementación de agentes de IA para atención al cliente y calificación de leads en tiempo real.
+                    <h3 data-en="Applied AI" data-es="IA Aplicada">Applied AI</h3>
+                    <p data-en="Implementing AI agents for customer service and real-time lead qualification." data-es="Implementación de agentes de IA para atención al cliente y calificación de leads.">
+                        Implementing AI agents for customer service and real-time lead qualification.
                     </p>
                 </div>
             </div>
         </main>
 
+        <!-- Footer Section -->
         <footer>
-            <p>&copy; 2026 Luis Bryon. Diseñado para el impacto.</p>
+            <p data-en="&copy; 2026 Luis Bryon. Designed for impact." data-es="&copy; 2026 Luis Bryon. Diseñado para el impacto.">&copy; 2026 Luis Bryon. Designed for impact.</p>
         </footer>
     </div>
+
+    <!-- Language Switcher Script -->
+    <script>
+        const langToggle = document.getElementById('lang-toggle');
+        let currentLang = 'en';
+
+        langToggle.addEventListener('click', () => {
+            currentLang = currentLang === 'en' ? 'es' : 'en';
+            langToggle.textContent = currentLang === 'en' ? 'ESP' : 'ENG';
+            
+            // Update all elements with data attributes
+            document.querySelectorAll('[data-en]').forEach(el => {
+                const newText = el.getAttribute(`data-${currentLang}`);
+                // Use innerHTML to preserve tags like <strong> inside the strings
+                el.innerHTML = newText;
+            });
+            
+            // Update HTML lang attribute
+            document.documentElement.lang = currentLang;
+        });
+    </script>
 </body>
 
 </html>
