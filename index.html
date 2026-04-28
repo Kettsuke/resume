@@ -1,39 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Luis Bryon | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis Bryon | Automation Expert</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <nav>
             <div class="nav-container">
-                <a href="index.html" class="active">Home</a>
+                <a href="index.html" class="active">Inicio</a>
                 <a href="historia.html">Historia</a>
                 <a href="proyectos.html">Proyectos</a>
-                <a href="skills.html">Skills</a>
+                <a href="skills.html">Habilidades</a>
                 <a href="acerca.html">Sobre mí</a>
             </div>
         </nav>
 
-        <header>
-            <h1>Luis Bryon</h1>
-            <p style="font-size: 1.2rem; color: var(--accent);">Automation Engineer & GHL Specialist</p>
-            <p>Construyo sistemas de marketing que funcionan. Especialista en GoHighLevel y n8n basado en Cali, Colombia.</p>
-        </header>
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <span class="badge">Disponible para nuevos proyectos</span>
+                    <h1>Ingeniería de Automatización & GHL</h1>
+                    <p class="hero-desc">
+                        Ayudo a agencias y empresas a escalar mediante sistemas inteligentes.
+                        Especialista en <strong>GoHighLevel</strong>, <strong>n8n</strong> y soluciones personalizadas
+                        de IA.
+                    </p>
+                    <div class="cta-group">
+                        <a href="#contacto" class="btn-primary">Hablemos de tu proyecto</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Aquí irá tu foto: assets/img/perfil.jpg -->
+                    <img src="assets/img/perfil.webp" alt="Luis Bryon"
+                        onerror="this.src='https://via.placeholder.com/280x280/1e293b/38bdf8?text=Luis+Bryon'">
+                </div>
+            </section>
 
-        <h2>Enfoque</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Marketing Ops</h3>
-                <p>Implementación de workflows complejos, bots de IA y CRM para agencias.</p>
+            <section class="stats-row">
+                <div class="stat-item">
+                    <h4>50+</h4>
+                    <p>Workflows creados</p>
+                </div>
+                <div class="stat-item">
+                    <h4>20+</h4>
+                    <p>CRMs optimizados</p>
+                </div>
+                <div class="stat-item">
+                    <h4>100%</h4>
+                    <p>Enfoque en ROI</p>
+                </div>
+            </section>
+
+            <h2 class="section-title">Especialidades</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Marketing Ops</h3>
+                    <p>Configuración avanzada de GoHighLevel, snapshot architecture y automatización de lead journey.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Integraciones Custom</h3>
+                    <p>Conexión de herramientas complejas usando n8n, webhooks y APIs personalizadas.</p>
+                </div>
+                <div class="card">
+                    <h3>IA Aplicada</h3>
+                    <p>Implementación de agentes de IA para atención al cliente y calificación de leads en tiempo real.
+                    </p>
+                </div>
             </div>
-            <div class="card">
-                <h3>Custom Dev</h3>
-                <p>Código a medida cuando las herramientas No-Code llegan a su límite.</p>
-            </div>
-        </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Luis Bryon. Diseñado para el impacto.</p>
+        </footer>
     </div>
 </body>
+
 </html>
