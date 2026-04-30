@@ -1,38 +1,66 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills | Luis Bryon</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <nav><div class="nav-container">
-            <a href="index.html">Home</a>
-            <a href="historia.html">Historia</a>
-            <a href="proyectos.html">Proyectos</a>
-            <a href="skills.html" class="active">Skills</a>
-            <a href="acerca.html">Sobre mí</a>
-        </div></nav>
+        <nav>
+            <div class="nav-container">
+                <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
+                <a href="acerca.html" data-en="About" data-es="Sobre mí">About</a>
+                <a href="historia.html" data-en="Experience" data-es="Experiencia">Experience</a>
+                <a href="proyectos.html" data-en="Projects" data-es="Proyectos">Projects</a>
+                <a href="skills.html" data-en="Skills" data-es="Habilidades">Skills</a>
+                <button id="lang-toggle" class="lang-btn">ESP</button>
+            </div>
+        </nav>
 
-        <h1>Stack Técnico</h1>
+        <main>
+            <h2 data-en="Technical & Strategic Skills" data-es="Habilidades Técnicas y Estratégicas">Technical & Strategic Skills</h2>
+            
+            <div class="grid-2" style="margin-top: 2rem;">
+                <div class="glass-card">
+                    <h3 data-en="Core Tools & Logic" data-es="Herramientas y Lógica">Core Tools & Logic</h3>
+                    <div class="tag-container" style="margin-top: 1rem; margin-bottom: 2rem;">
+                        <span class="tag highlight">GoHighLevel</span>
+                        <span class="tag highlight">n8n</span>
+                        <span class="tag highlight">Make.com</span>
+                        <span class="tag highlight">Zapier</span>
+                    </div>
+                    
+                    <h3 data-en="Development & Data" data-es="Desarrollo y Datos">Development & Data</h3>
+                    <div class="tag-container" style="margin-top: 1rem;">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">OpenAI API</span>
+                        <span class="tag">Webhooks / APIs</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Stripe Integration</span>
+                    </div>
+                </div>
 
-        <div class="grid">
-            <div class="card">
-                <h3>Automation</h3>
-                <div class="tags">
-                    <span class="tag">GoHighLevel</span> <span class="tag">n8n</span>
-                    <span class="tag">Make</span> <span class="tag">Pabbly</span>
+                <div class="glass-card">
+                    <h3 data-en="Strategic Approach" data-es="Enfoque Estratégico">Strategic Approach</h3>
+                    <ul class="custom-list" style="margin-top: 1.5rem;">
+                        <li data-en="<strong>ROI-Focused Process Analysis:</strong> Transforming complex workflows to maximize profitability." data-es="<strong>Análisis de Procesos (ROI):</strong> Transformación de flujos de trabajo para maximizar rentabilidad."><strong>ROI-Focused Process Analysis:</strong> Transforming complex workflows to maximize profitability.</li>
+                        <li data-en="<strong>Client Reading & Empathy:</strong> Deep ability to understand client needs and structural bottlenecks." data-es="<strong>Lectura del Cliente:</strong> Capacidad profunda para entender necesidades y cuellos de botella estructurales."><strong>Client Reading & Empathy:</strong> Deep ability to understand client needs and structural bottlenecks.</li>
+                        <li data-en="<strong>Structural Optimization:</strong> Identifying operational weak points and automating them seamlessly." data-es="<strong>Optimización Estructural:</strong> Identificación de puntos débiles operativos y su automatización."><strong>Structural Optimization:</strong> Identifying operational weak points and automating them seamlessly.</li>
+                        <li data-en="<strong>Attention to Detail:</strong> Executing micro-optimizations that compound into massive successes." data-es="<strong>Atención al Detalle:</strong> Ejecución de micro-optimizaciones cruciales para el éxito masivo."><strong>Attention to Detail:</strong> Executing micro-optimizations that compound into massive successes.</li>
+                    </ul>
                 </div>
             </div>
-            <div class="card">
-                <h3>Dev & Infra</h3>
-                <div class="tags">
-                    <span class="tag">Node.js</span> <span class="tag">Python</span>
-                    <span class="tag">Docker</span> <span class="tag">Elasticsearch</span>
-                </div>
-            </div>
-        </div>
+        </main>
+
+        <footer>
+            <p data-en="&copy; 2026 Luis Bryon. Designed with precision." data-es="&copy; 2026 Luis Bryon. Diseñado con precisión.">&copy; 2026 Luis Bryon. Designed with precision.</p>
+        </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

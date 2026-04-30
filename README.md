@@ -1,74 +1,23 @@
-# Hi, I'm Luis Bryon
+# Luis Bryon - Automation & Systems Portfolio
 
-**GoHighLevel Specialist & Marketing Automation Engineer**
-Building marketing tech systems that actually work, from Cali, Colombia (US-aligned timezone)
+Welcome to the source code of my professional portfolio. 
 
----
+## About The Project
+This project is a multi-language (English/Spanish) static website built with highly aesthetic **Apple-style Glassmorphism**. It is designed to be the central hub of my resume, showcasing my experience in GoHighLevel (GHL), process automation, n8n, and custom AI implementations.
 
-## What I Do
+## Features
+- **Bilingual Capabilities**: Seamless switching between English and Spanish via a custom JavaScript toggle, persisting user preference via LocalStorage.
+- **Glassmorphism UI**: Uses cutting-edge CSS to create blurred, translucent floating cards over a deep dark blue neon mesh background.
+- **Responsive Layout**: Completely mobile-ready utilizing CSS Grids and Flexbox.
 
-I help agencies and businesses scale their marketing operations through end-to-end implementations:
+## Structure
+- `index.html`: Main landing page (Hero, Tech Stack, Value Proposition).
+- `acerca.html`: About me section, detailing my drive for constant learning and attention to detail.
+- `historia.html`: Professional experience timeline (Pler Telecomunicaciones, Freelance, Intouch CX).
+- `skills.html`: Categorized technical stack and strategic/ROI-focused skills.
+- `proyectos.html`: Showcases of my AI-powered CRM for Clinics and other ongoing builds.
+- `style.css`: The engine behind the sleek visual design.
+- `script.js`: Language toggle logic and dynamic navigation state handling.
 
-- **GoHighLevel:** Workflows, white label, sub-accounts, AI bots, custom integrations, memberships, payments
-- **Automation pipelines:** n8n, Pabbly Connect, Make/Integromat
-- **Full-stack development:** When a workflow needs custom code, I write it
-- **DevOps that nobody wants to touch:** Self-hosted ticketing, Elasticsearch debugging, YAML magic
-
-I'm fluent in both technical execution and marketing operations, which means I can talk to your CMO and your CTO in the same meeting without losing either.
-
----
-
-## Stack
-
-**Marketing Automation**
-GoHighLevel · n8n · Pabbly Connect · Make/Automatich · AI conversational bots
-
-**Frontend**
-React · Next.js · Tailwind · HTML/CSS
-
-**Backend**
-Node.js · Python · PHP · REST APIs · Webhooks
-
-**DevOps & Infra**
-YAML · Elasticsearch · Zammad · Docker · VirtualBox · Self-hosted solutions
-
-**Languages**
-Spanish (native), English (C1 certified by EF)
-
----
-
-## Featured Work
-
-See pinned repositories below. Each one comes with a real story: a problem, a stack decision, and a result.
-
----
-
-## Currently
-
-- Engineering marketing automation for a US healthcare network (3 service providers)
-- Studying Systems Engineering, 5th semester
-- Open to remote opportunities, USD-based
-
----
-
-## Background
-
-Tech wasn't my first stop. Before this, I spent:
-- 3 years in customer service (callcenter)
-- 1 year in sales
-- 8 months as a coordinator
-- Several years as a digital solutions specialist focused on SEO
-
-That non-linear path is the reason I can build automation that actually works for real users, because I've been the user, the seller, and the support person.
-
----
-
-## Reach Me
-
-- Phone: +57 3163612669
-- Email: luisbryon@gmail.com
-- LinkedIn: [linkedin.com/in/luisbryon](https://www.linkedin.com/in/luis-david-bryon-3478aa236/) 
-
----
-
-<sub>If you're an agency or business looking for someone who can ship, not just code, let's talk.</sub>
+## Deployment
+This project is ready to be deployed on GitHub Pages, Vercel, or Netlify right out of the box. Just host the files and it will run instantly.

@@ -1,33 +1,72 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Historia | Luis Bryon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Luis Bryon</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <nav><div class="nav-container">
-            <a href="index.html">Home</a>
-            <a href="historia.html" class="active">Historia</a>
-            <a href="proyectos.html">Proyectos</a>
-            <a href="skills.html">Skills</a>
-            <a href="acerca.html">Sobre mí</a>
-        </div></nav>
+        <nav>
+            <div class="nav-container">
+                <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
+                <a href="acerca.html" data-en="About" data-es="Sobre mí">About</a>
+                <a href="historia.html" data-en="Experience" data-es="Experiencia">Experience</a>
+                <a href="proyectos.html" data-en="Projects" data-es="Proyectos">Projects</a>
+                <a href="skills.html" data-en="Skills" data-es="Habilidades">Skills</a>
+                <button id="lang-toggle" class="lang-btn">ESP</button>
+            </div>
+        </nav>
 
-        <h1>Mi Trayectoria</h1>
-        <p>No empecé en la ingeniería. Vengo de las trincheras del servicio al cliente y las ventas.</p>
+        <main>
+            <h2 data-en="Professional Experience" data-es="Experiencia Profesional">Professional Experience</h2>
+            
+            <div class="glass-card" style="margin-top: 2rem;">
+                <div class="timeline">
+                    <!-- Pler Telecomunicaciones -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">MAR 2024 — PRESENT</div>
+                        <h3 data-en="Digital Solutions Specialist" data-es="Especialista en Soluciones Digitales">Digital Solutions Specialist</h3>
+                        <p style="color: var(--text-main); font-weight: 500;">Pler Telecomunicaciones SAS</p>
+                        <ul class="custom-list">
+                            <li data-en="Web development, SEO analysis and positioning." data-es="Desarrollo web, análisis y posicionamiento SEO.">Web development, SEO analysis and positioning.</li>
+                            <li data-en="Process improvement and GoHighLevel (GHL) automation engineering." data-es="Mejora de procesos y automatizaciones en GoHighLevel (GHL).">Process improvement and GoHighLevel (GHL) automation engineering.</li>
+                            <li data-en="Management and configuration of AI Bots." data-es="Manejo y configuración de Bots de Inteligencia Artificial.">Management and configuration of AI Bots.</li>
+                            <li data-en="<strong>Key Achievements:</strong> Increased sales production, optimized operational pipelines, improved GHL contact conversations, and established marketing campaign tracking." data-es="<strong>Logros Clave:</strong> Aumenté la producción de ventas, mejoré procesos operativos y pipelines, optimicé conversaciones con contactos en GHL, y automaticé el trackeo de campañas de Marketing."><strong>Key Achievements:</strong> Increased sales production, optimized operational pipelines, improved GHL contact conversations, and established marketing campaign tracking.</li>
+                        </ul>
+                    </div>
 
-        <div class="card" style="margin-bottom: 1rem;">
-            <h3>De Agente a Ingeniero</h3>
-            <p>Pasé 3 años en Call Centers y 1 año en ventas. Esa experiencia es mi mayor ventaja: no automatizo procesos por automatizar, los automatizo porque entiendo el dolor del usuario y la necesidad de cerrar una venta.</p>
-        </div>
+                    <!-- Freelance -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">FREELANCE</div>
+                        <h3 data-en="GHL CRM & Web Specialist" data-es="Especialista CRM GHL & Web">GHL CRM & Web Specialist</h3>
+                        <p style="color: var(--text-main); font-weight: 500;" data-en="Various Clients (e.g. Centro Comercial La Estación)" data-es="Varios Clientes (ej. Centro Comercial La Estación)">Various Clients (e.g. Centro Comercial La Estación)</p>
+                        <ul class="custom-list">
+                            <li data-en="Designed and launched websites with full CRM setup on GoHighLevel." data-es="Diseño web y configuración completa del CRM en GoHighLevel.">Designed and launched websites with full CRM setup on GoHighLevel.</li>
+                            <li data-en="Provided continuous operational support and automated workflow implementations." data-es="Soporte continuo e implementaciones de flujos de automatización.">Provided continuous operational support and automated workflow implementations.</li>
+                        </ul>
+                    </div>
 
-        <ul>
-            <li><strong>Líder CRM y Web:</strong> Actualmente gestionando infraestructuras en Pler Telecomunicaciones.</li>
-            <li><strong>Especialista Digital:</strong> Años enfocados en SEO y soluciones digitales.</li>
-            <li><strong>Estudiante de Ingeniería:</strong> Cursando 5to semestre para formalizar el conocimiento técnico.</li>
-        </ul>
+                    <!-- Intouch CX -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">PREVIOUS</div>
+                        <h3 data-en="Customer Service Agent" data-es="Agente de Servicio al Cliente">Customer Service Agent</h3>
+                        <p style="color: var(--text-main); font-weight: 500;">Intouch CX (Walmart Spark)</p>
+                        <ul class="custom-list">
+                            <li data-en="Delivered excellent customer service handling queries for delivery drivers." data-es="Servicio al cliente excelente atendiendo a repartidores de deliveries.">Delivered excellent customer service handling queries for delivery drivers.</li>
+                            <li data-en="Maintained high performance metrics and resolved complex operational scenarios." data-es="Mantuve métricas de alto rendimiento resolviendo escenarios operativos complejos.">Maintained high performance metrics and resolved complex operational scenarios.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p data-en="&copy; 2026 Luis Bryon. Designed with precision." data-es="&copy; 2026 Luis Bryon. Diseñado con precisión.">&copy; 2026 Luis Bryon. Designed with precision.</p>
+        </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,143 +1,61 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- Default language: English -->
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luis Bryon | Automation Expert</title>
-    <!-- Styles & Fonts -->
+    <title>Luis Bryon | Automation & GHL Expert</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <div class="container">
-        <!-- Navigation Bar -->
         <nav>
             <div class="nav-container">
-                <a href="index.html" class="active" data-en="Home" data-es="Inicio">Home</a>
-                <a href="historia.html" data-en="History" data-es="Historia">History</a>
+                <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
+                <a href="acerca.html" data-en="About" data-es="Sobre mí">About</a>
+                <a href="historia.html" data-en="Experience" data-es="Experiencia">Experience</a>
                 <a href="proyectos.html" data-en="Projects" data-es="Proyectos">Projects</a>
                 <a href="skills.html" data-en="Skills" data-es="Habilidades">Skills</a>
-                <a href="acerca.html" data-en="About" data-es="Sobre mí">About</a>
-                <!-- Language Toggle Button -->
                 <button id="lang-toggle" class="lang-btn">ESP</button>
             </div>
         </nav>
 
         <main>
-            <!-- Hero Section -->
-            <section class="hero">
-                <div class="hero-content">
-                    <span class="badge" data-en="Available for new projects" data-es="Disponible para proyectos">Available for new projects</span>
-                    <h1 data-en="Automation & GHL Engineering" data-es="Ingeniería de Automatización & GHL">Automation & GHL Engineering</h1>
-                    <p class="hero-desc" data-en="I help agencies and businesses scale through intelligent systems. Specialist in <strong>GoHighLevel</strong>, <strong>n8n</strong>, and custom AI solutions." data-es="Ayudo a agencias y empresas a escalar mediante sistemas inteligentes. Especialista en <strong>GoHighLevel</strong>, <strong>n8n</strong> y soluciones personalizadas de IA.">
-                        I help agencies and businesses scale through intelligent systems. 
-                        Specialist in <strong>GoHighLevel</strong>, <strong>n8n</strong>, and custom AI solutions.
-                    </p>
-                    <div class="cta-group">
-                        <a href="#contact" class="btn-primary" data-en="Let's Talk" data-es="Hablemos">Let's Talk</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <!-- Profile Picture -->
-                    <img src="assets/img/perfil.webp" alt="Luis Bryon" onerror="this.src='https://via.placeholder.com/280x280/1e293b/38bdf8?text=Luis+Bryon'">
-                </div>
-            </section>
-
-            <!-- Impact Metrics -->
-            <section class="stats-row">
-                <div class="stat-item">
-                    <h4>50+</h4>
-                    <p data-en="Workflows Built" data-es="Workflows creados">Workflows Built</p>
-                </div>
-                <div class="stat-item">
-                    <h4>20+</h4>
-                    <p data-en="CRMs Optimized" data-es="CRMs optimizados">CRMs Optimized</p>
-                </div>
-                <div class="stat-item">
-                    <h4>100%</h4>
-                    <p data-en="ROI Focused" data-es="Enfoque en ROI">ROI Focused</p>
-                </div>
-            </section>
-
-            <!-- Tech Stack Section -->
-            <section class="tech-stack">
-                <h2 class="section-title" data-en="Trusted Technologies" data-es="Tecnologías clave">Trusted Technologies</h2>
-                <div class="tech-grid">
-                    <span class="tech-tag">GoHighLevel</span>
-                    <span class="tech-tag">n8n.io</span>
-                    <span class="tech-tag">Make.com</span>
-                    <span class="tech-tag">OpenAI</span>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Webhooks</span>
-                </div>
-            </section>
-
-            <!-- Services Section -->
-            <h2 class="section-title" data-en="Specialties" data-es="Especialidades">Specialties</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3 data-en="Marketing Ops" data-es="Marketing Ops">Marketing Ops</h3>
-                    <p data-en="Advanced GoHighLevel setup, snapshot architecture, and lead journey automation." data-es="Configuración avanzada de GoHighLevel, arquitectura de snapshots y automatización de leads.">
-                        Advanced GoHighLevel setup, snapshot architecture, and lead journey automation.
-                    </p>
-                </div>
-                <div class="card">
-                    <h3 data-en="Custom Integrations" data-es="Integraciones Custom">Custom Integrations</h3>
-                    <p data-en="Connecting complex tools using n8n, webhooks, and custom APIs." data-es="Conexión de herramientas complejas usando n8n, webhooks y APIs personalizadas.">
-                        Connecting complex tools using n8n, webhooks, and custom APIs.
-                    </p>
-                </div>
-                <div class="card">
-                    <h3 data-en="Applied AI" data-es="IA Aplicada">Applied AI</h3>
-                    <p data-en="Implementing AI agents for customer service and real-time lead qualification." data-es="Implementación de agentes de IA para atención al cliente y calificación de leads.">
-                        Implementing AI agents for customer service and real-time lead qualification.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Featured Project Preview -->
-            <section class="featured-work">
-                <h2 class="section-title" data-en="Latest Work" data-es="Último proyecto">Latest Work</h2>
-                <div class="featured-card">
-                    <div class="featured-content">
-                        <h3 data-en="AI-Powered CRM for Dental Clinics" data-es="CRM con IA para Clínicas Dentales">AI-Powered CRM for Dental Clinics</h3>
-                        <p data-en="Automated lead capture, qualification, and appointment booking using n8n and OpenAI integrations." data-es="Captura automatizada de leads, calificación y reserva de citas usando n8n e IA.">
-                            Automated lead capture, qualification, and appointment booking using n8n and OpenAI integrations.
+            <section style="margin-top: 6rem; margin-bottom: 6rem;">
+                <div class="grid-2" style="align-items: center;">
+                    <div>
+                        <div class="tag highlight" style="display: inline-block; margin-bottom: 1.5rem;" data-en="Available for new challenges" data-es="Disponible para nuevos retos">Available for new challenges</div>
+                        <h1 data-en="Luis Bryon" data-es="Luis Bryon">Luis Bryon</h1>
+                        <h2 style="color: var(--text-main); font-size: 1.5rem;" data-en="Automation & Systems Specialist" data-es="Especialista en Sistemas & Automatización">Automation & Systems Specialist</h2>
+                        <p data-en="I help businesses scale through intelligent systems. I don't just automate tasks, I optimize processes focusing on ROI and structural improvements by finding exactly what companies need." data-es="Ayudo a escalar negocios mediante sistemas inteligentes. No solo automatizo tareas, optimizo procesos enfocándome en el ROI y mejoras estructurales, detectando los puntos débiles de cada empresa.">
+                            I help businesses scale through intelligent systems. I don't just automate tasks, I optimize processes focusing on ROI and structural improvements by finding exactly what companies need.
                         </p>
-                        <a href="proyectos.html" class="link-arrow" data-en="View Case Study" data-es="Ver caso de estudio">View Case Study &rarr;</a>
+                        <div style="margin-top: 2.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <a href="proyectos.html" class="btn-primary" data-en="View Projects" data-es="Ver Proyectos">View Projects</a>
+                            <a href="historia.html" class="btn-primary" style="background: transparent; border: 1px solid var(--accent); color: var(--text-main); box-shadow: none;" data-en="My Experience" data-es="Mi Experiencia">My Experience</a>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <div class="glass-card" style="text-align: center; max-width: 320px; width: 100%;">
+                            <img src="assets/img/perfil.webp" alt="Luis Bryon" style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; border: 3px solid var(--accent); padding: 5px; background: var(--bg-dark);" onerror="this.src='https://via.placeholder.com/180/0f172a/38bdf8?text=LB'">
+                            <h3 data-en="Core Tech Stack" data-es="Stack Principal">Core Tech Stack</h3>
+                            <div class="tag-container" style="justify-content: center; margin-top: 1rem;">
+                                <span class="tag">GoHighLevel</span>
+                                <span class="tag">n8n</span>
+                                <span class="tag">OpenAI</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
 
-        <!-- Footer Section -->
         <footer>
-            <p data-en="&copy; 2026 Luis Bryon. Designed for impact." data-es="&copy; 2026 Luis Bryon. Diseñado para el impacto.">&copy; 2026 Luis Bryon. Designed for impact.</p>
+            <p data-en="&copy; 2026 Luis Bryon. Designed with precision." data-es="&copy; 2026 Luis Bryon. Diseñado con precisión.">&copy; 2026 Luis Bryon. Designed with precision.</p>
         </footer>
     </div>
-
-    <!-- Language Switcher Script -->
-    <script>
-        const langToggle = document.getElementById('lang-toggle');
-        let currentLang = 'en';
-
-        langToggle.addEventListener('click', () => {
-            currentLang = currentLang === 'en' ? 'es' : 'en';
-            langToggle.textContent = currentLang === 'en' ? 'ESP' : 'ENG';
-            
-            // Update all elements with data attributes
-            document.querySelectorAll('[data-en]').forEach(el => {
-                const newText = el.getAttribute(`data-${currentLang}`);
-                // Use innerHTML to preserve tags like <strong> inside the strings
-                el.innerHTML = newText;
-            });
-            
-            // Update HTML lang attribute
-            document.documentElement.lang = currentLang;
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
-
 </html>
